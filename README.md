@@ -1,2 +1,2 @@
-# bizzi-bank
-Simple bank system made with React following a youtube course.
+# bizzi-costs
+Simple project costs management app made following a tutorial in youtube, using React.
