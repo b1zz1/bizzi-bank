@@ -7,5 +7,14 @@
 }
 
 .min-height {
-    min-height: 75%;
+    min-height: 71.3%;
+}
+
+.start {
+    justify-content: flex-start;
+}
+
+.column {
+    flex-direction: column;
+    justify-content: flex-start;
 }

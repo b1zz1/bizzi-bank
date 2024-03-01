@@ -9,3 +9,24 @@ html, body, #root {
   /* background-color: #EFEFEF; */
   height: 100%;
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f7f7f7;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0b5cf4;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #042b74;
+  transition: 200ms;
+}
