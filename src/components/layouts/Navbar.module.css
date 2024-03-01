@@ -1,5 +1,4 @@
 .navbar {
-    display: flex;
     justify-content: space-between;
     background-color: #0b5cf4;
     padding: 1em;
@@ -13,6 +12,7 @@
 
 .item {
     margin-right: 2em;
+    font-weight: 500;
 }
 
 .item a {
@@ -22,7 +22,6 @@
 
 .item a:hover {
     color: #042b74;
-    text-decoration: none;
     transition: 200ms;
 }
 
@@ -31,6 +30,7 @@
     height: auto;
 }
 
-.logo_align {
-    justify-content: flex-start;
+.logo:hover {
+    width: 50%;
+    height: auto;
 }
