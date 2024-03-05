@@ -1,6 +1,6 @@
 .navbar {
     justify-content: space-between;
-    background-color: #0b5cf4;
+    background-color: #0b6dff;
     padding: 1em;
 }
 
@@ -21,16 +21,11 @@
 }
 
 .item a:hover {
-    color: #042b74;
+    color: #04367e;
     transition: 200ms;
 }
 
 .logo {
     width: 40%;
-    height: auto;
-}
-
-.logo:hover {
-    width: 50%;
     height: auto;
 }
