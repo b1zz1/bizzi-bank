@@ -22,7 +22,7 @@ function App() {
           <Route exact path="/Projects" element={<Projects />} />
         </Routes>
       </Container>
-        <Footer />
+      <Footer />
     </Router>
   );
 }

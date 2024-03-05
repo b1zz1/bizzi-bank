@@ -1,0 +1,22 @@
+.form_control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.form_control label {
+    margin-bottom: .6em;
+}
+
+.form_control select {
+    padding: .7em;
+    border: 2px solid #8a8a8a;
+    border-radius: 5px;
+    transition: 200ms;
+    color: #8a8a8a;
+    cursor: pointer;
+}
+
+.form_control select:focus {
+    border-color: #0b6dff;
+}

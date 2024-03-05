@@ -21,12 +21,12 @@ html, body, #root {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #0b5cf4;
+  background: #0b6dff;
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #042b74;
+  background: #04367e;
   transition: 200ms;
 }
