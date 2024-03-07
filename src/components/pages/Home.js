@@ -1,6 +1,5 @@
 import styles from './Home.module.css'
 import LinkButton from '../layouts/LinkButton'
-import manage from '../images/managing.svg'
 import manage_alt from '../images/managing_alt1.svg'
 
 function Home() {

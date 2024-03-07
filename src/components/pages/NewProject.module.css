@@ -4,6 +4,10 @@
     padding: 3em;
 }
 
+.newproject_container h1, p {
+    text-align: center;
+}
+
 .newproject_container h1 {
     margin-bottom: 0.5em;
 }

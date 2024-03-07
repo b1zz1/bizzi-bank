@@ -10,3 +10,13 @@
     border: none;
     padding: .5em;
 }
+
+.submit_area {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5em;
+}
+
+.submit_area button{
+    padding: 0.7em ;
+}

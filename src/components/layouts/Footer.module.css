@@ -15,16 +15,21 @@
 
 .social_list li {
     margin: 1em 1em;
+    transition: 200ms;
 }
 
 .social_list li:hover {
     color: #0b6dff;
-    transition: 200ms;
 }
 
 .social_list svg {
     font-size: 1.5em;
     cursor: pointer;
+}
+
+.social_list a:visited {
+    text-decoration: none;
+    color: inherit;
 }
 
 .copy_right {
