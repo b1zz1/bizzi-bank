@@ -1,5 +1,4 @@
 import {Link, NavLink} from 'react-router-dom'
-
 import Container from './Container'
 import styles from './Navbar.module.css'
 import logo from '../images/bizzi-bank-logo-icon.svg'
