@@ -1,3 +1,4 @@
+
 .form_control {
     display: flex;
     flex-direction: column;
@@ -15,8 +16,19 @@
     transition: 200ms;
     color: #8a8a8a;
     cursor: pointer;
+
+    /* select field arrow style */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('../images/arrow-down.svg');
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: calc(100% - 8px) center;
 }
 
 .form_control select:focus {
+    outline: none;
     border-color: #0b6dff;
+    background-image: url('../images/arrow-down-onfocus.svg');
 }

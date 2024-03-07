@@ -9,7 +9,7 @@ function ClearForm({event}) {
     return(
 
         <div className={styles.clear_form}>
-            <button onClick={event} className={styles.btn}><FaTrash/></button>
+            <button onClick={event} className={styles.btn}><FaTrash /></button>
         </div>
     )
 }

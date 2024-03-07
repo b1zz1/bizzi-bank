@@ -8,6 +8,7 @@
     background-color: #ff3333;
     cursor: pointer;
     transition: 200ms;
+    padding: 0 .8005em;
 }
 
 .clear_form .btn:hover {

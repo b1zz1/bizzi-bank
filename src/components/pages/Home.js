@@ -9,7 +9,7 @@ function Home() {
             <p>Start managing your projects right now!</p>
             <LinkButton to="/NewProject" text="Create new project"/>
             <img src={manage_alt} alt="" />
-        </section>
+         </section>
     )
 }
 
