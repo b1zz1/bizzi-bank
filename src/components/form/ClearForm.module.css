@@ -1,0 +1,15 @@
+.clear_form {
+    display: flex;
+}
+
+.clear_form .btn {
+    display: flex;
+    align-items: center;
+    background-color: #ff3333;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.clear_form .btn:hover {
+    background-color: #b22323;
+}

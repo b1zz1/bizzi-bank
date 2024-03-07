@@ -1,0 +1,17 @@
+.submit {
+    display: flex;
+}
+
+.submit button{
+    background-color: #0b6dff;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    transition: 200ms;
+}
+
+.submit button:hover {
+    background-color: #04367e;
+}

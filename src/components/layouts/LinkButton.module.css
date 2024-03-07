@@ -7,9 +7,9 @@
     text-decoration: none;
     font-weight: 700;
     text-align: center;
+    transition: 200ms;
 }
 
 .btn:hover {
     background-color: #04367e;
-    transition: 200ms;
 }
