@@ -1,9 +1,7 @@
 import styles from './Submit.module.css'
 
-function Submit({text}) {
-
-
-    return(
+const Submit = ({ text }) => {
+    return (
             <div className={styles.submit}>
                 <button className={styles.btn}>{text}</button>
             </div>

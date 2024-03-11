@@ -5,24 +5,23 @@ import Select from '../form/Select'
 import Submit from '../form/Submit'
 import ClearForm from '../form/ClearForm'
 
-import style from './ProjectForm.module.css'
+import styles from './ProjectForm.module.css'
 
-function ProjectForm ({handleSubmit, projectData}) {
-    const [categories, setCategories] = useState([])
+const ProjectForm = ({ handleSubmit, projectData }) => {
     const [project, setProject] = useState(projectData || {})
+    const [categories, setCategories] = useState([])
 
     useEffect(() => {
         fetch("http://localhost:5000/categories", {
-            method: "GET",
+            method: 'GET',
             headers: {
-                'Content-Type': 'application/json'
-            }
+                'Content-Type': 'application/json',
+            },
         })
         .then((answer) => answer.json())
         .then((data) => {
             setCategories(data)
         })
-        .catch((error) => console.log(error))
     }, [])
 
     const submit = (e) => {
@@ -31,20 +30,21 @@ function ProjectForm ({handleSubmit, projectData}) {
     }
 
     function handleChange(e) {
-        setProject({...project, [e.target.name]: e.target.value})
+        setProject(prevProject => ({...prevProject, [e.target.name]: e.target.value}))
     }
 
     function handleCategory(e) {
-        setProject({...project,
+        setProject(prevProject => ({
+            ...prevProject,
             category: {
                 id: e.target.value,
                 name: e.target.options[e.target.selectedIndex].text,
             },
-        })
+        }))
     }
 
     return (
-        <form onSubmit={submit} className={style.form}>
+        <form onSubmit={submit} className={styles.form}>
             <Input
                 type="text"
                 name="name"
@@ -68,7 +68,7 @@ function ProjectForm ({handleSubmit, projectData}) {
                 handleOnChange={handleCategory} 
                 value={project.category ? project.category.id : ''}
             />
-            <div className={style.submit_area}>
+            <div className={styles.submit_area}>
                 <ClearForm />
                 <Submit text="Create project" />
             </div>

@@ -1,16 +1,5 @@
 {
   "projects": [
-    {
-      "id": "98a0",
-      "select": "1",
-      "budget": 0,
-      "name": "Test",
-      "category": {
-        "id": "1",
-        "name": "Infrastructure"
-      },
-      "services": []
-    }
   ],
   "categories": [
     {

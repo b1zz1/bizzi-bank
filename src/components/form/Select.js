@@ -1,13 +1,13 @@
-import style from './Select.module.css'
+import styles from './Select.module.css'
 
-function Select({text, name, options, handleOnChange, value}) {
+const Select = ({ text, name, options, handleOnChange, value }) => {
     return (
-        <div className={style.form_control}>
+        <div className={styles.form_control}>
             <label htmlFor={name}>{text}</label>
-            <select className={style.form_control_arrow} name={name} id={name} onChange={handleOnChange} value={value || ''}>
+            <select className={styles.form_control_arrow} name={name} id={name} onChange={handleOnChange} value={value || ''}>
                 <option>Select an option</option>
-                {options.map((option) => (
-                    <option value={option.id} key={option.id}>{option.name}</option>
+                {options.map((options) => (
+                    <option value={options.id} key={options.id}>{options.name}</option>
                 ))}
             </select>
         </div>

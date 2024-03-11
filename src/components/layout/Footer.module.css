@@ -18,8 +18,17 @@
     transition: 200ms;
 }
 
+.social_list a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
 .social_list li:hover {
     color: #0b6dff;
+}
+
+.social_list li:active {
+    color: #04367e;
 }
 
 .social_list svg {
@@ -27,10 +36,6 @@
     cursor: pointer;
 }
 
-.social_list a:visited {
-    text-decoration: none;
-    color: inherit;
-}
 
 .copy_right {
     margin-top: 1em;
