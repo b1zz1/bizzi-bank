@@ -1,15 +1,15 @@
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './components/pages/Home'
+import NewProject from './components/pages/NewProject'
 import Company from './components/pages/Company'
 import Contact from './components/pages/Contact'
-import NewProject from './components/pages/NewProject'
 import Projects from './components/pages/Projects'
 
-import Container from './components/layouts/Container'
-import Navbar from './components/layouts/Navbar'
-import Footer from './components/layouts/Footer'
+import Navbar from './components/layout/Navbar'
+import Container from './components/layout/Container'
+import Footer from './components/layout/Footer'
 
-function App() {
+const App = () => {
   return (
     <Router>
       <Navbar />
@@ -24,7 +24,7 @@ function App() {
       </Container>
       <Footer />
     </Router>
-  );
+  )
 }
 
 export default App;

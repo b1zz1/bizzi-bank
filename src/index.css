@@ -2,31 +2,30 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif; 
 }
 
 html, body, #root {
-  /* background-color: #EFEFEF; */
   height: 100%;
 }
 
-::-webkit-scrollbar {
-  width: 5px;
-}
+/* Scrollbar for webkit browsers*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f7f7f7;
-}
+  ::-webkit-scrollbar-track {
+    background: #f7f7f7;
+  }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #0b6dff;
-  border-radius: 10px;
-}
+  ::-webkit-scrollbar-thumb {
+    background: #0b6dff;
+    border-radius: 10px;
+  }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #04367e;
-  transition: 200ms;
+  ::-webkit-scrollbar-thumb:hover {
+    background: #04367e;
+    transition: 200ms;
+  }
 }
