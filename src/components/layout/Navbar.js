@@ -4,7 +4,7 @@ import Container from './Container'
 
 import styles from './Navbar.module.css'
 
-import logo from '../images/bizzi-bank-logo-icon.svg'
+import logo from '../images/bluco-logo.svg'
 
 
 const Navbar = () => {

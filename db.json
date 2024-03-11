@@ -1,5 +1,52 @@
 {
   "projects": [
+    {
+      "id": "b4ec",
+      "name": "Test",
+      "budget": "5000",
+      "cost": 0,
+      "services": []
+    },
+    {
+      "id": "3e24",
+      "name": "System Requisites",
+      "category": {
+        "id": "4",
+        "name": "Planning"
+      },
+      "budget": "10000",
+      "cost": 0,
+      "services": []
+    },
+    {
+      "id": "292b",
+      "name": "System prototype",
+      "budget": "15000",
+      "category": {
+        "id": "3",
+        "name": "Design"
+      },
+      "cost": 0,
+      "services": []
+    },
+    {
+      "id": "c0d7",
+      "name": "Landing Page development",
+      "budget": "19250",
+      "category": {
+        "id": "2",
+        "name": "Development"
+      },
+      "cost": 0,
+      "services": []
+    },
+    {
+      "id": "9dd3",
+      "name": "Landing Page testing",
+      "budget": "5000",
+      "cost": 0,
+      "services": []
+    }
   ],
   "categories": [
     {
