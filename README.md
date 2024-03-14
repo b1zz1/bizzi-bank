@@ -1,3 +1,3 @@
 # Bluco
-Simple project costs management app made following a tutorial on youtube, using React.
+Simple project management system made with React JS.
 
