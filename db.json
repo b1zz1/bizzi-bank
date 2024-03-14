@@ -1,5 +1,27 @@
 {
   "projects": [
+    {
+      "id": "66d7",
+      "name": "Test",
+      "budget": "5000",
+      "category": {
+        "id": "1",
+        "name": "Infrastructure"
+      },
+      "cost": 0,
+      "services": []
+    },
+    {
+      "id": "da06",
+      "name": "Miguel gostoso",
+      "budget": "1000000000",
+      "category": {
+        "id": "4",
+        "name": "Planning"
+      },
+      "cost": 0,
+      "services": []
+    }
   ],
   "categories": [
     {

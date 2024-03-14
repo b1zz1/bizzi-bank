@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 
 import styles from './Message.module.css'
 
-const Message = ({ type, text }) => {
+const Message = ({ type, text, forceVisible }) => {
     const [visible, setVisible] = useState(false)
     
     useEffect(() => {

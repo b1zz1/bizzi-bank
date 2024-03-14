@@ -1,4 +1,6 @@
 .navbar {
+    /* display: flex;
+    justify-content: space-between; */
     background-color: #0b6dff;
     padding: 1em;
 }
@@ -27,4 +29,24 @@
 .logo {
     width: 40%;
     height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .list {
+        width: 100%;
+        justify-content: space-between;
+        margin: 0.5em 1em;
+    }
+
+    .list li {
+        margin-right: 0;
+    }
+
+    .item a {
+        white-space: nowrap;
+    }
+
+    .logo {
+        display: none;
+    }
 }
