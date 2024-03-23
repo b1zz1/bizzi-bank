@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import Input from '../form/Input'
 import Select from '../form/Select'
 import Submit from '../form/Submit'
-import ClearForm from '../form/ClearForm'
+import DeleteButton from '../layout/DeleteButton'
 
 import styles from './ProjectForm.module.css'
 
@@ -18,7 +18,7 @@ const ProjectForm = ({ handleSubmit, projectData }) => {
                 'Content-Type': 'application/json',
             },
         })
-        .then((answer) => answer.json())
+        .then((response) => response.json())
         .then((data) => {
             setCategories(data)
         })
@@ -43,6 +43,14 @@ const ProjectForm = ({ handleSubmit, projectData }) => {
         }))
     }
 
+    function clearForm() {
+        setProject({
+            name: '',
+            budget: '',
+            category: 0
+        })
+    }
+
     return (
         <form onSubmit={submit} className={styles.form}>
             <Input
@@ -60,6 +68,7 @@ const ProjectForm = ({ handleSubmit, projectData }) => {
                 placeholder="$1000,00"
                 handleOnChange={handleChange}
                 value={project.budget ? project.budget : ''}
+                required
             />
             <Select 
                 name="select" 
@@ -69,7 +78,7 @@ const ProjectForm = ({ handleSubmit, projectData }) => {
                 value={project.category ? project.category.id : ''}
             />
             <div className={styles.submit_area}>
-                <ClearForm />
+                <DeleteButton type="submit" event={clearForm} disabled/>
                 <Submit text="Create project" />
             </div>
         </form>

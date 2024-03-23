@@ -1,8 +1,8 @@
-import LinkButton from '../layout/LinkButton'
+import LinkButton from '../components/layout/LinkButton'
 
 import styles from './Home.module.css'
 
-import manage_alt from '../images/home-img.svg'
+import manage_alt from '../assets/home-img.svg'
 
 const Home = () => {
     return (

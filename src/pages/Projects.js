@@ -1,12 +1,13 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, Suspense } from 'react'
 import { useLocation } from 'react-router-dom'
 
-import Container from '../layout/Container'
-import LinkButton from '../layout/LinkButton'
-import Message from '../layout/Message'
-import ProjectCard from '../project/ProjectCard'
+import Container from '../components/layout/Container'
+import LinkButton from '../components/layout/LinkButton'
+import Message from '../components/layout/Message'
+import ProjectCard from '../components/project/ProjectCard'
 
-import styles from './Project.module.css'
+import Loading from '../components/project/Loading'
+import styles from './Projects.module.css'
 
 function Projects() {
     const [projects, setProjects] = useState([])
@@ -43,13 +44,15 @@ function Projects() {
             <Container customClass="start">
                 {projects.length > 0 && 
                     projects.map((project) => (
-                        <ProjectCard
-                            id={project.id}
-                            name={project.name}
-                            budget={project.budget}
-                            category={project.category.name}
-                            key={project.id}
-                        />
+                        <Suspense fallback={<Loading />}>
+                            <ProjectCard
+                                id={project.id}
+                                name={project.name}
+                                budget={project.budget}
+                                category={project.category}
+                                key={project.id}
+                            />
+                        </Suspense>
                     )
                 )}
             </Container>
