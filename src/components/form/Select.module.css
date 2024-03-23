@@ -22,7 +22,7 @@
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    background-image: url('../images/arrow-down.svg');
+    background-image: url('../../assets/arrow-down.svg');
     background-repeat: no-repeat;
     background-size: 15px;
     background-position: calc(100% - 8px) center;
@@ -31,7 +31,7 @@
 .form_control select:focus {
     outline: none;
     border-color: #0b6dff;
-    background-image: url('../images/arrow-down-onfocus.svg');
+    background-image: url('../../assets/arrow-down-onfocus.svg');
 }
 
 .form_control select option {

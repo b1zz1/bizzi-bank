@@ -1,16 +1,15 @@
-.clear_form {
+.delete_button {
     display: flex;
 }
 
-.clear_form .btn {
+.delete_button .btn {
     display: flex;
     align-items: center;
     background-color: #ff3333;
     cursor: pointer;
     transition: 200ms;
-    padding: 0 .8005em;
 }
 
-.clear_form .btn:hover {
+.delete_button .btn:hover {
     background-color: #b22323;
 }

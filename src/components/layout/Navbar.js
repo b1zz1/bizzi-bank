@@ -4,7 +4,7 @@ import Container from './Container'
 
 import styles from './Navbar.module.css'
 
-import logo from '../images/bluco-logo.svg'
+import logo from '../../assets/bluco-logo.svg'
 
 
 const Navbar = () => {
