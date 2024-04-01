@@ -6,6 +6,7 @@
     border-radius: 10px;
     width: 18%;
     margin: 0.5em;
+    box-shadow: 0 4px 20px #8a939e70;
 }
 
 .project_card h4 {
@@ -25,6 +26,7 @@
 .project_card p span {
     font-weight: bold;
 }
+
 
 .category_text {
     display: flex;
