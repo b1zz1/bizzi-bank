@@ -4,7 +4,6 @@ import { FaPen } from 'react-icons/fa'
 import DeleteButton from '../layout/DeleteButton'
 
 import styles from './ProjectCard.module.css'
-import { Suspense } from 'react'
 
 
 const ProjectCard = ({ id, name, budget, category, handleRemove }) => {
