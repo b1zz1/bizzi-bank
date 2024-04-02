@@ -15,7 +15,7 @@ const Message = ({ type, text, forceVisible }) => {
         setVisible(true)
         
         // makes the Message component vanish after 3 seconds
-        const timer= setTimeout(() => {
+        const timer = setTimeout(() => {
             setVisible(false)
         }, 3000)
 
