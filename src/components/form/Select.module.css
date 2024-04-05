@@ -16,7 +16,6 @@
     transition: 200ms;
     color: #8a8a8a;
     background-color: #fff;
-    cursor: pointer;
 
     /* select field arrow style */
     appearance: none;
@@ -26,6 +25,7 @@
     background-repeat: no-repeat;
     background-size: 15px;
     background-position: calc(100% - 8px) center;
+    cursor: pointer;
 }
 
 .form_control select:focus {
