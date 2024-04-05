@@ -16,9 +16,9 @@ const ProjectCard = ({ id, name, budget, category, handleRemove }) => {
     return (
         <div className={styles.project_card}>
             <img src={placeholder} alt="placeholder"/>
-            <p className={styles.category_text}>
+            <div className={styles.category_text}>
                 <span className={`${styles[category.name.toLowerCase()] || styles.default}`}>{category.name}</span>
-            </p>
+            </div>
             <h4>{name}</h4>
             <p>
                 <span>budget:</span> R${budget}
