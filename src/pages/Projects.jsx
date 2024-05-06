@@ -62,17 +62,17 @@ function Projects() {
             </div>
             {message && <Message type="success" text={message} />}
             {projectMessage && <Message type="success" text={projectMessage} />}
-            <Container customClass="around">
+            <Container customClass="gap">
                 {projects.length > 0 && 
                     projects.map((project) => (
-                            <ProjectCard
-                                id={project.id}
-                                name={project.name}
-                                budget={project.budget}
-                                category={project.category}
-                                key={project.id}
-                                handleRemove={removeProject}
-                            />
+                        <ProjectCard class="card"
+                            id={project.id}
+                            name={project.name}
+                            budget={project.budget}
+                            category={project.category}
+                            key={project.id}
+                            handleRemove={removeProject}
+                        />
                     )
                 )}
                 {!removeLoading && <Loading />}
