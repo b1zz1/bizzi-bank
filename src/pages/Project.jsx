@@ -2,6 +2,7 @@
 import { useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 
+import Container from '../components/layout/Container'
 import Loading from '../components/layout/Loading'
 
 import styles from "./Project.module.css"
@@ -28,11 +29,22 @@ const Project = () => {
 
     console.log(id)
     
+    const toggleProjectForm = () => {
+    
+    }
+
     return (
         <>
             {project.name ? (
-                <p>{project.name}</p>
-            ): (
+                <div>
+                    <Container customClass="column">
+                        <div>
+                            <h1>Projeto: {project.name}</h1>
+                            <button>editar</button>
+                        </div>
+                    </Container>
+                </div>
+            ) : (
                 <Loading />
             )}
         </>

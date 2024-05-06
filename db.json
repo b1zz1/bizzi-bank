@@ -45,12 +45,34 @@
       "services": []
     },
     {
-      "id": "0ea8",
-      "name": "Test 5",
-      "budget": "2525",
+      "id": "6ea1",
+      "name": "a",
+      "budget": "1",
       "category": {
-        "id": "3",
-        "name": "Design"
+        "id": "2",
+        "name": "Development"
+      },
+      "cost": 0,
+      "services": []
+    },
+    {
+      "id": "ac79",
+      "name": "a",
+      "budget": "1",
+      "category": {
+        "id": "1",
+        "name": "Infrastructure"
+      },
+      "cost": 0,
+      "services": []
+    },
+    {
+      "id": "1ba0",
+      "name": "b",
+      "budget": "2",
+      "category": {
+        "id": "2",
+        "name": "Development"
       },
       "cost": 0,
       "services": []

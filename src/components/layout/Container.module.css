@@ -19,6 +19,10 @@
     justify-content: flex-start;
 }
 
+.gap {
+    gap: 2em;
+}
+
 .min-height {
     min-height: 75%;
 }

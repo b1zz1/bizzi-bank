@@ -4,7 +4,6 @@
     padding: .7em;
     border-radius: 12px;
     width: 17%;
-    margin: .5em;
     box-shadow: 0 4px 20px #8a939e70;
 }
 
@@ -45,19 +44,19 @@
 }
 
 .category_text .infrastructure {
-    background-color: #a0e7e5;
+    background-color: #61b0ad; /* Light teal */
 }
 
 .category_text .development {
-    background-color: #b4f8c8;
+    background-color: #70c994; /* Light green */
 }
 
 .category_text .design {
-    background-color: #ffaebc;
+    background-color: #ff7e8a; /* Light red */
 }
 
 .category_text .planning {
-    background-color: #fbe7c6;
+    background-color: #f8dca6; /* Light yellow */
 }
 
 .project_card_actions {
