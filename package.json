@@ -19,7 +19,7 @@
     "dev": "concurrently \"npm start\" \"npm run backend\"",
     "start": "vite",
     "backend": "json-server --watch db.json --port 5000",
-    "build": "tsc && vite build",
+    "build": "tsc -b && vite build",
     "serve": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"

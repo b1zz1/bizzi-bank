@@ -5,8 +5,9 @@ import svgr from 'vite-plugin-svgr';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+    base: '/bluco-project/',
     plugins: [
-        react(), 
+        react(),
         viteTsconfigPaths(),
         svgr({ include: '**/*.svg?react', }),
     ],
