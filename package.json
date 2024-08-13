@@ -1,6 +1,7 @@
 {
   "name": "bluco-project",
   "version": "0.1.0",
+  "homepage": "https://b1zz1.github.io/bluco-project",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -17,9 +18,11 @@
   "scripts": {
     "dev": "concurrently \"npm start\" \"npm run backend\"",
     "start": "vite",
+    "backend": "json-server --watch db.json --port 5000",
     "build": "tsc && vite build",
     "serve": "vite preview",
-    "backend": "json-server --watch db.json --port 5000"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "eslintConfig": {
     "extends": [
@@ -42,6 +45,7 @@
   "devDependencies": {
     "@vitejs/plugin-react": "^4.2.1",
     "concurrently": "^8.2.2",
+    "gh-pages": "^6.1.1",
     "vite": "^5.2.11",
     "vite-plugin-svgr": "^4.2.0",
     "vite-tsconfig-paths": "^4.3.2"
