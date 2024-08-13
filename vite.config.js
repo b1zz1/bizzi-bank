@@ -9,6 +9,7 @@ const vite_tsconfig_paths_1 = __importDefault(require("vite-tsconfig-paths"));
 const vite_plugin_svgr_1 = __importDefault(require("vite-plugin-svgr"));
 // https://vitejs.dev/config/
 exports.default = (0, vite_1.defineConfig)({
+    base: '/bluco-project/',
     plugins: [
         (0, plugin_react_1.default)(),
         (0, vite_tsconfig_paths_1.default)(),
